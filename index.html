@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Nova - Futuristic Portfolio</title>
+    <!-- Use Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Import Google Fonts for the futuristic feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ961WwE25s0u26V75aEaVwB/k75F25o/W4Tj0eR55y000k5wTq8s5A/B63w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-black/50 backdrop-blur-sm p-4 md:p-6 border-b border-gray-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl md:text-3xl font-orbitron font-bold neon-text-blue tracking-widest">GALAXY</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-gray-400 hover:neon-text-pink transition duration-300">Home</a>
+                <a href="#projects" class="text-gray-400 hover:neon-text-pink transition duration-300">Projects</a>
+                <a href="#about" class="text-gray-400 hover:neon-text-pink transition duration-300">About Us</a>
+                <a href="#contact" class="text-gray-400 hover:neon-text-pink transition duration-300">Contact Us</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-400 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-40 bg-black/90 backdrop-blur-sm hidden flex flex-col items-center justify-center space-y-8 md:hidden">
+        <button id="close-menu-button" class="absolute top-6 right-6 text-gray-400 hover:text-white focus:outline-none">
+            <i class="fas fa-times text-2xl"></i>
+        </button>
+        <a href="#hero" class="text-3xl text-gray-400 hover:neon-text-pink transition duration-300">Home</a>
+        <a href="#projects" class="text-3xl text-gray-400 hover:neon-text-pink transition duration-300">Projects</a>
+        <a href="#about" class="text-3xl text-gray-400 hover:neon-text-pink transition duration-300">About Us</a>
+        <a href="#contact" class="text-3xl text-gray-400 hover:neon-text-pink transition duration-300">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden text-center">
+        <!-- Background Canvas for Particles -->
+        <canvas id="hero-canvas" class="absolute inset-0 z-0 opacity-30"></canvas>
+        <div class="relative z-10 p-4 md:p-8">
+            <h1
+                class="text-4xl md:text-6xl font-orbitron font-bold uppercase tracking-wide leading-tight neon-text-blue">
+                Welcome to the<br>Irbaz Web
+            </h1>
+            <p class="mt-4 md:mt-6 text-base md:text-xl text-gray-300 max-w-2xl mx-auto">
+                Exploring the future of web development, one project at a time.
+            </p>
+            <a href="#projects"
+                class="mt-8 inline-block px-8 py-3 rounded-full text-lg font-bold uppercase tracking-wider text-white gradient-bg neon-glow hover:scale-105 transition-transform duration-300">
+                View My Projects
+            </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-center text-3xl md:text-5xl font-orbitron font-bold neon-text-pink mb-12">My Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+
+                <!-- Project Card 1 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-700 neon-glow">
+                    <img src="regform.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl md:text-2xl font-orbitron font-semibold neon-text-blue">Registration Form
+                        </h3>
+                        <p class="mt-2 text-sm text-gray-400">
+                            A sleek, functional user interface for a fictional operating system, built with React and
+                            styled with a clean, dark-mode aesthetic.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">#HTML</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">#CSS</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">#Form</span>
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="https://regform-irbaz.netlify.app/"
+                                class="px-4 py-2 rounded-full text-sm font-bold gradient-bg neon-glow"
+                                target="_blank">Live
+                                Demo</a>
+                            <a href="https://github.com/Galaxy5487/Registration-Form-Project"
+                                class="px-4 py-2 rounded-full text-sm font-bold bg-transparent border border-gray-500 hover:neon-border-pink"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-700 neon-glow">
+                    <img src="gym.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl md:text-2xl font-orbitron font-semibold neon-text-blue">GYM</h3>
+                        <p class="mt-2 text-sm text-gray-400">
+                            An interactive web app that uses Three.js to render and manipulate 3D holographic models in
+                            the browser.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">#HTML</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">#CSS</span>
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="https://stellular-pastelito-f3c4d3.netlify.app"
+                                class="px-4 py-2 rounded-full text-sm font-bold gradient-bg neon-glow"
+                                target="_blank">Live
+                                Demo</a>
+                            <a href="https://github.com/Galaxy5487/GYM"
+                                class="px-4 py-2 rounded-full text-sm font-bold bg-transparent border border-gray-500 hover:neon-border-pink"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden border border-gray-700 neon-glow">
+                    <img src="netflix.png" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl md:text-2xl font-orbitron font-semibold neon-text-blue">Netflix</h3>
+                        <p class="mt-2 text-sm text-gray-400">
+                            A data visualization dashboard that streams and displays real-time data from a simulated AI
+                            network.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">#HTML</span>
+                            <span class="bg-gray-700 text-gray-300 px-2 py-1 rounded-full">#CSS</span>
+                        </div>
+                        <div class="mt-6 flex space-x-4">
+                            <a href="https://clone-project-irbaz.netlify.app"
+                                class="px-4 py-2 rounded-full text-sm font-bold gradient-bg neon-glow"
+                                target="_blank">Live
+                                Demo</a>
+                            <a href="https://github.com/Galaxy5487/project-cloning--NETFLIX-"
+                                class="px-4 py-2 rounded-full text-sm font-bold bg-transparent border border-gray-500 hover:neon-border-pink"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-orbitron font-bold neon-text-blue mb-8">About Us</h2>
+            <img src="download.png" alt="Avatar"
+                class="w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto mb-6 border-2 neon-border-blue">
+            <p class="text-base md:text-lg max-w-3xl mx-auto">
+                I am BCA course Graduating Student of Merit Haji Ismail Sahib Art & Science College Which Was Located in
+                Pernambut,
+                Vellore District, Tamil Nadu, India. I am passionate about web development and design, always striving
+                to
+                create innovative and user-friendly digital experiences. My journey in the tech world is driven by a
+                desire
+                to push boundaries and explore new horizons. I believe in the power of technology to transform lives and
+                communities, and I am committed to contributing to this vision through my work. Whether it's building
+                dynamic
+                web applications, designing intuitive user interfaces, or collaborating on exciting projects, I am
+                dedicated to
+                making a positive impact in the digital landscape. Let's connect and explore the endless possibilities
+                of the
+                digital world together!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 border-t border-gray-800">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-orbitron font-bold neon-text-pink mb-8">Contact Us</h2>
+            <p class="text-base md:text-lg max-w-3xl mx-auto mb-12">
+                Let's connect and build something extraordinary together.
+            </p>
+
+            <form action="thankyou.html" class="max-w-lg mx-auto space-y-6">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-300 border border-gray-700 focus:outline-none focus:border-neon-blue transition duration-300">
+                <input type="email" name="email" placeholder="Your Email"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-300 border border-gray-700 focus:outline-none focus:border-neon-blue transition duration-300">
+                <textarea name="message" rows="4" placeholder="Your Message"
+                    class="w-full px-4 py-3 rounded-lg bg-gray-800 text-gray-300 border border-gray-700 focus:outline-none focus:border-neon-blue transition duration-300"></textarea>
+                <button type="submit"
+                    class="w-full px-6 py-3 rounded-full text-lg font-bold gradient-bg neon-glow hover:scale-105 transition-transform duration-300">
+                    Send Message
+                </button>
+                <br>
+                <br>
+                <br>
+            </form>
+
+            <div class="flex justify-center space-x-8 text-2xl md:text-4xl">
+                <a href="https://github.com/Galaxy5487?tab=repositories"
+                    class="text-gray-400 hover:neon-text-blue transition duration-300" target="_blank"><i class="fab fa-github" target="_blank"></i></a>
+                <a href="https://linkedin.com/in/mohammed-irbaz-193973371"
+                    class="text-gray-400 hover:neon-text-blue transition duration-300"><i
+                        class="fab fa-linkedin" target="_blank"></i></a>
+                <a href="https://www.instagram.com/official_galaxy_gamerz_5487?igsh=MTlmbWNnYzZjbXZzNA==" class="text-gray-400 hover:neon-text-blue transition duration-300"><i
+                        class="fab fa-instagram" target="_blank"></i></a>
+                <a href="mailto:irbaz5487@gmail.com"
+                    class="text-gray-400 hover:neon-text-blue transition duration-300"><i
+                        class="fas fa-envelope" target="_blank"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-sm text-gray-500 border-t border-gray-800">
+        <p>&copy; 2025 Project Nova. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Canvas Animation -->
+    <script src="java.js"></script>
+</body>
+
+</html>
